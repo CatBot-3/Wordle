@@ -1,7 +1,7 @@
-import <string>;
-import <iostream>;
-import <sstream>;
-import <fstream>;
+#include <string>
+#include <iostream>
+#include <sstream>
+#include <fstream>
 using namespace std;
 
 const string GREEN = "\033[32m";
