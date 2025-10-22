@@ -1,5 +1,6 @@
 # Wordle
 Game Wordle
+
 Apart from normal Wordle Game, implemented the hard mode
 where players are forced to use all information given by each guess:
 1. Characters that are highlighted green in previous guesses must be used again in the same position in future guesses.
