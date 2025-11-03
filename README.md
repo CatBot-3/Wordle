@@ -17,7 +17,7 @@ A lightweight, terminal-based Wordle clone for 6-letter words, written in C++. S
 ## Build
 ```bash  
 # Linux/macOS  
-g++ -std=c++17 -O2 -Wall -Wextra -pedantic -o wordle wordle.cc
+g++ -std=c++20 -O2 -Wall -Wextra -pedantic -o wordle wordle.cc
 
 # Windows (MinGW)  
-g++ -std=c++17 -O2 -Wall -Wextra -pedantic -o wordle.exe wordle.cc
+g++ -std=c++20 -O2 -Wall -Wextra -pedantic -o wordle.exe wordle.cc
