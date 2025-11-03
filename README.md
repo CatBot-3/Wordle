@@ -38,10 +38,15 @@ Examples:
 ## Exit Codes and Validation
 #### Missing/invalid arguments and states return specific codes:
 1: No secret word provided
+
 2: Secret word not length 6
+
 3: Mode is not an integer
+
 4: Mode must be 0 or 1
+
 5: Secret word not found in words.txt
+
 
 #### Runtime input validation:
 - Guess length must be 6
