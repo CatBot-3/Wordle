@@ -1,8 +1,23 @@
-# Wordle
-Game Wordle
+# Wordle (C++ Terminal Edition)
 
-Apart from normal Wordle Game, implemented the hard mode
-where players are forced to use all information given by each guess:
-1. Characters that are highlighted green in previous guesses must be used again in the same position in future guesses.
-2. Characters that are yellow in the previous guess must be used again in a future guess, either turning green or remaining yellow. For simplicity, you only need to consider the yellow letters from the previous guess, instead of needing to track all possible yellow characters from all guesses.
-3. Characters that were not yellow or green in previous guesses cannot be used again in future guesses
+A lightweight, terminal-based Wordle clone for 6-letter words, written in C++. Supports Easy and Hard modes with ANSI-colored feedback and dictionary validation.
+
+## Features
+- 6-letter Wordle with up to 6 guesses
+- ANSI color feedback (Green = correct spot, Yellow = present elsewhere)
+- Dictionary validation against `words.txt`
+- Easy mode (default) and Hard mode (locks greens, require yellows, forbid grays)
+- Duplicate-safe two-pass coloring algorithm
+
+## Requirements
+- C++17 compiler (GCC/Clang/MSVC)
+- Terminal with ANSI color support
+- `words.txt` placed next to the executable (one 6-letter word per line, case-sensitive)
+
+## Build
+```bash  
+# Linux/macOS  
+g++ -std=c++17 -O2 -Wall -Wextra -pedantic -o wordle wordle.cpp  
+
+# Windows (MinGW)  
+g++ -std=c++17 -O2 -Wall -Wextra -pedantic -o wordle.exe wordle.cpp  
